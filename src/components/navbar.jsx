@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import NavLink from "./navLink";
 
 const links = [
   { url: "/", title: "Home" },
@@ -13,9 +15,15 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
+      {/* Links */}
+      <div className=" hidden md:flex gap-4 w-1/3">
+        {links.map((link) => (
+          <NavLink link={link} key={link.title} />
+        ))}
+      </div>
       {/* Logo */}
-      <div className="">
+      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link
           href="/"
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
@@ -26,8 +34,20 @@ const Navbar = () => {
           </span>
         </Link>
       </div>
-      {/* Responsive Menu */}
-      <div className="">
+      {/* Social Media */}
+      <div className="hidden md:flex gap-6 w-1/4">
+        <Link href="https://github.com/ceyhunozyilmaz" target="_blank">
+          <Image src="/github.png" alt="" width={30} height={30} />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/ceyhun-ozy%C4%B1lmaz/"
+          target="_blank"
+        >
+          <Image src="/linkedin.png" alt="" width={30} height={30} />
+        </Link>
+      </div>
+      {/* Responsive Menu  */}
+      <div className="md:hidden">
         {/* Menu Button */}
         <button
           className="w-10 h-8 flex flex-col justify-between z-50 relative"
