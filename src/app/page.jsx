@@ -22,13 +22,15 @@ const Homepage = () => {
           {/* Title */}
           <h1 className="text-4xl md:text-6xl font-bold">Frontend Developer</h1>
           {/* Desc */}
+
           <p className="md:text-xl ">
-            Hello, I am a software developer crafting applications with web
+            Hello, I&apos;m a software developer crafting applications with web
             technologies. My passion for learning and growth enables me to
             enhance my skills with each new project. My openness to innovation
             and staying up-to-date with the latest technologies allows me to
             further develop myself with every new project.
           </p>
+
           {/* Buttons */}
           <div className="w-full flex gap-4 ">
             <Link href="/portfolio">
