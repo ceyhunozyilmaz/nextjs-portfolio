@@ -3,7 +3,7 @@
 # Hakkında
 Bu portföy sitesi, bir frontend geliştirici olarak profesyonel becerilerim ve deneyimim hakkında genel bir bakış sağlamak amacıyla tasarlanmıştır. Sitede hakkımda ayrıntılı bilgiler, geçmişim ve üzerinde çalıştığım çeşitli projeler bulunmaktadır.
 
-#Özellikler
+Özellikler
 Kişisel Bilgiler: Benim hakkımda genel bilgiler.
 Beceriler: Sahip olduğum teknik ve profesyonel beceriler.
 Projeler: Üzerinde çalıştığım projeler hakkında detaylar.
