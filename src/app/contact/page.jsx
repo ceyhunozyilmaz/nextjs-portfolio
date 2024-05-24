@@ -5,7 +5,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
-  const [succes, setSucces] = useState(false);
+  const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const text = "Say Hello";
 
@@ -15,7 +15,7 @@ const ContactPage = () => {
     e.preventDefault();
 
     setError(false);
-    setSucces(false);
+    setSuccess(false);
 
     emailjs
       .sendForm(
@@ -28,7 +28,7 @@ const ContactPage = () => {
       )
       .then(
         (result) => {
-          setSucces(true);
+          setSuccess(true);
           form.current.reset();
         },
         (error) => {
@@ -79,7 +79,7 @@ const ContactPage = () => {
           />
           <span>My mail adress is:</span>
           <input
-            name="user_email "
+            name="user_email"
             type="text"
             className="bg-transparent border-b-2 border-b-black outline-none"
           />
@@ -87,9 +87,9 @@ const ContactPage = () => {
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
             Send
           </button>
-          {succes && (
+          {success && (
             <span className="text-green-600 font-semibold">
-              Your message has been sent succesfully!
+              Your message has been sent successfully!
             </span>
           )}
           {error && (

@@ -24,11 +24,12 @@ const Homepage = () => {
           {/* Desc */}
 
           <p className="md:text-xl ">
-            Hello, I&apos;m a software developer crafting applications with web
-            technologies. My passion for learning and growth enables me to
-            enhance my skills with each new project. My openness to innovation
-            and staying up-to-date with the latest technologies allows me to
-            further develop myself with every new project.
+            Hello! I am Ceyhun Özyılmaz, a professional Frontend Developer.
+            crafting applications with web technologies. My passion for learning
+            and growth enables me to enhance my skills with each new project. My
+            openness to innovation and staying up-to-date with the latest
+            technologies allows me to further develop myself with every new
+            project.
           </p>
 
           {/* Buttons */}
