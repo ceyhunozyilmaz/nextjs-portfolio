@@ -31,7 +31,7 @@ const ContactPage = () => {
           setSuccess(true);
           form.current.reset();
         },
-        (error) => {
+        (err) => {
           setError(true);
         }
       );
@@ -77,7 +77,7 @@ const ContactPage = () => {
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
           />
-          <span>My mail adress is:</span>
+          <span>My mail address is:</span>
           <input
             name="user_email"
             type="text"

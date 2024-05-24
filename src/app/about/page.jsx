@@ -29,9 +29,9 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             <p>
-              Hello! I'm Ceyhun Özyılmaz, a professional Frontend Developer.
-              I've been working in this field for about 2 years, making
-              developments. Particularly, I'm proficient in HTML, CSS, and
+              Hello! I am Ceyhun Özyılmaz, a professional Frontend Developer. I
+              have been working in this field for about 2 years, making
+              developments. Particularly, I am proficient in HTML, CSS, and
               JavaScript, as well as modern frontend frameworks and libraries
               such as React and Next.js. My future goal is to work with people
               who share the same passion as me and to learn new things every
